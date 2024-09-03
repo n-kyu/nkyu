@@ -7,10 +7,10 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <div className="main">
       <div className="header flex gap-6 text-center text-4xl mb-9">
-        <Link href='/'>Home</Link>
-        <Link href='/projects'>Projects</Link>
-        <Link href='/about'>About</Link>
-      </div>
+            <Link href="/">Home</Link>
+            <Link href="/projects">Projects</Link>
+            <Link href="/about">About</Link>
+          </div>
       <AnimatePresence mode="wait">
         <Component key={router.route}  {...pageProps} />;
       </AnimatePresence>
