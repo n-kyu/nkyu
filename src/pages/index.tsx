@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import Inner from "../components/Layout/Inner"
+import Stairs from "../components/Layout/Stairs"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,12 +14,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Inner>
+      <Stairs>
         <h1>Home Page</h1>
         <div>
           <p>lorem ipsum</p>
         </div>
-      </Inner>
+      </Stairs>
     </>
   );
 }

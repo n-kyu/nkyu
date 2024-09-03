@@ -1,9 +1,9 @@
-import Inner from "../../components/Layout/Inner"
+import Stairs from "../../components/Layout/Stairs"
 
 export default function Projects() {
     return (
-        <Inner>
+        <Stairs>
             <h1>Projects Page</h1>
-        </Inner>
+        </Stairs>
     )
 }
