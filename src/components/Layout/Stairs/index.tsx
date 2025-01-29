@@ -1,8 +1,15 @@
 import { motion } from "framer-motion";
-import { opacity, expand} from '../anim'
+import { opacity, expand } from '../anim';
+import React, { ReactNode } from 'react';
 
-export default function Stairs({ children }) {
-  const anim = (variants, custom) => {
+
+interface StairsProps {
+  children?: ReactNode;
+}
+
+const Stairs: React.FC<StairsProps> = ({ children }) => {
+
+  const anim = (variants: any, custom?: any) => {
     return {
       initial: "initial",
       animate: "enter",
@@ -11,6 +18,7 @@ export default function Stairs({ children }) {
       custom
     };
   };
+
   const nbOfColumns = 7;
 
   return (
@@ -18,10 +26,18 @@ export default function Stairs({ children }) {
       <motion.div {...anim(opacity)} className="animate-background"></motion.div>
       <div className="transition-container">
         {[...Array(nbOfColumns)].map((_, i) => {
-          return <motion.div {...anim(expand, nbOfColumns - i)} className="animate-container" key={i} />;
+          return (
+            <motion.div
+              {...anim(expand, nbOfColumns - i)}
+              className="animate-container"
+              key={i}
+            />
+          );
         })}
       </div>
       {children}
     </div>
   );
-}
+};
+
+export default Stairs;

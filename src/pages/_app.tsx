@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
 import Header from '../components/header'
 import StickyCursor from '../components/StickyCursor'
+import Footer from '../components/Footer'
 
 
 
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       <AnimatePresence mode="wait">
         <Component key={router.route}  {...pageProps} />;
       </AnimatePresence>
+      <Footer />
     </div>
   )
 }

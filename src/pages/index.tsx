@@ -4,6 +4,7 @@ import Stairs from "../components/Layout/Stairs"
 import Hero from '../components/Hero/'
 import AboutMe from '../components/AboutMeSection'
 import Projects from '../components/ProjectsSection'
+import Clients from '../components/ClientsSection'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
       <Hero />
       <Stairs>
+        <Clients />
         <AboutMe />
         <Projects />
       </Stairs>

@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/ProjectsSection/index.jsx", "src/components/AboutMeSection/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/ProjectsSection/index.tsx", "src/components/AboutMeSection/index.tsx", "src/components/ProjectsSection/Technologies/svgIcons/index.jsx", "src/components/ProjectsSection/Technologies/index.jsx", "src/components/ProjectsSection/Technologies/index.jsx"],
   "exclude": ["node_modules"]
 }

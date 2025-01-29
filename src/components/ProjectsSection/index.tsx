@@ -1,5 +1,7 @@
+import ProjectCard from './ProjectCard'
+
 import React, { useRef, useEffect } from 'react';
-import Card from './Card';
+import Card from './Technologies';
 import {
   ReactIcon,
   CssIcon,
@@ -21,24 +23,22 @@ import {
   FigmaHoverIcon,
   DesignIcon,
   DesignHoverIcon,
-} from './Card/svgIcons';
+} from './Technologies/svgIcons';
 
-const ProjectsSection = () => {
-  const logosRef = useRef(null);
+const ProjectsSection: React.FC = () => {
+  const logosRef = useRef<HTMLUListElement | null>(null);
 
   useEffect(() => {
     if (logosRef.current) {
       const ul = logosRef.current;
-      const clonedUl = ul.cloneNode(true);
-      ul.parentNode.insertBefore(clonedUl, ul.nextSibling);
+      const clonedUl = ul.cloneNode(true) as HTMLUListElement;
+      ul.parentNode?.insertBefore(clonedUl, ul.nextSibling);
       clonedUl.setAttribute('aria-hidden', 'true');
     }
   }, []);
-
   return (
     <div className="main-container">
-      <div className="pt-[500px] pb-[500px]">
-        <h1>Projects section</h1>
+      <div className="pt-12 pb-12">
         <div className="-z-0 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
           <ul ref={logosRef} className="flex items-center justify-center md:justify-start [&_li]:mx-[2px]  animate-infinite-scroll">
             <li><Card svg={HtmlIcon} hoverSvg={HtmlHoverIcon}  name="HTML" /></li>
@@ -53,6 +53,12 @@ const ProjectsSection = () => {
             <li><Card svg={DesignIcon} hoverSvg={DesignHoverIcon}  name="Design System" /></li>
           </ul>
         </div>
+      </div>
+      <div className="border-b-[.1px] border-[#E8EAED]">
+          <h1 className="italic">Selected Projects.</h1>
+      </div>
+      <div className='pt-[72px]'>
+      <ProjectCard />
       </div>
     </div>
   );

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Lobos-Guará Cerrado",
+    "description": "Lobos-Guará Cerrado is a project that aims to protect and conserve the Lobos-Guará Cerrado, a species of wild cat that is endemic to the Cerrado biome in Brazil. The project is a collaboration between the Brazilian government, local communities, and conservation organizations. The goal of the project is to create a network of protected areas for the Lobos-Guará Cerrado, as well as to educate the public about the importance of conservation and the threats that the species faces.",
+    "technologies": ["Next.Js", "TailwindCSS", "CSS", "Framer Motion"],
+    "link": "http://lobosguaracerrado.com.br/",
+    "videoSrc": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "iDid": ["Full Project", "End-to-End Development"]
+  },
+  {
+    "id": 2,
+    "name": "Cuidar Soluções Engenharia",
+    "description": "Cuidar Soluções Engenharia is a company that provides engineering and construction services to the Brazilian market. The company is a leader in the field of engineering and construction, and has a reputation for delivering high-quality projects on time and within budget.",
+    "technologies": ["Next.Js", "TailwindCSS"],
+    "link": "https://cuidarsolucoesengenharia.com.br/",
+    "videoSrc": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "iDid": ["Full Project", "End-to-End Development"]
+  },
+  {
+    "id": 3,
+    "name": "Multicuidar",
+    "description": "Multi Cuidar is a company that provides home care services to the Brazilian market. The company is a leader in the field of home care, and has a reputation for delivering high-quality projects on time and within budget.",
+    "technologies": ["Next.Js", "TailwindCSS"],
+    "link": "https://www.multicuidar.com.br/",
+    "videoSrc": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "iDid": ["Full Project", "End-to-End Development"]
+  },
+  {
+    "id": 4,
+    "name": "UnitedELDT",
+    "description": "UnitedELDT is a company that provides engineering and construction services to the Brazilian market. The company is a leader in the field of engineering and construction, and has a reputation for delivering high-quality projects on time and within budget.",
+    "technologies": ["React", "TailwindCSS", "CSS" ],
+    "link": "https://www.unitedeldt.com/",
+    "videoSrc": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "iDid": ["Part of the team", "Frontend Development"]
+  },
+  {
+    "id": 5,
+    "name": "",
+    "description": "",
+    "technologies": [],
+    "link": "",
+    "videoSrc": "",
+    "iDid": []
+  },
+  {
+    "id": 6,
+    "name": "",
+    "description": "",
+    "technologies": [],
+    "link": "",
+    "videoSrc": "",
+    "iDid": []
+  }
+]
